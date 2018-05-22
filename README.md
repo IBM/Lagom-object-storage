@@ -21,7 +21,7 @@ To build and run this example, you need:
 - [IBM Cloud Object Storage](https://www.ibm.com/cloud-computing/bluemix/cloud-object-storage) setup in [IBM Bluemix](https://www.ibm.com/cloud-computing/bluemix/)
 
 
-Once you have an IBM Cloud Object Storage setup, the main steps to run this example are:
+## Steps
 
 1.  [Download and set up the Lagom service](#download-and-set-up-the-lagom-service)
 2.  [Start the Lagom sample application](#start-the-lagom-sample-application)
@@ -30,7 +30,7 @@ Once you have an IBM Cloud Object Storage setup, the main steps to run this exam
 5.  [Next steps](#next-steps)
 
 
-## Download and set up the Lagom service
+### Download and set up the Lagom service
 
 Follow these steps to get a local copy of this project and configure it with the Cloud Object Storage credentials and settings.
 
@@ -46,7 +46,7 @@ Follow these steps to get a local copy of this project and configure it with the
     1. Copy the `account-impl/src/main/resources/cloud-object-storage.conf.template` file to `account-impl/src/main/resources/cloud-object-storage.conf`.
     2. Open `account-impl/src/main/resources/cloud-object-storage.conf` in a text editor and fill in the necessary information. Details are provided in the file itself.
 
-## Start the Lagom sample application
+### Start the Lagom sample application
 
  In the command line shell where you downloaded the Lagom service, start the Lagom development environment from the `lagom-cloud-object-storage-example` directory:
 
@@ -66,7 +66,7 @@ You should see some console output, including these lines:
 These messages indicate that the service has started correctly.
 
 
-## Generate some traffic on the Lagom service
+### Generate some traffic on the Lagom service
 
 To keep things simple, the example does not have a GUI but exposes a REST API. You can use any REST client or http tool to interact with the application. The rest of this guide will use curl syntax to document the calls. You can adapt it to your REST client of choice.
 
@@ -103,14 +103,14 @@ curl http://localhost:9000/api/account/123-4567-890/extract/1
 ```
 You can also navigate to the  Cloud Object Storage bucket in Bluemix and verify the presence of the file.
 
-## Stop Lagom and clean IBM Cloud Object Storage
+### Stop Lagom and clean IBM Cloud Object Storage
 
 To stop running the service:
 
 1.  Press "Enter" in the console running the Lagom development environment to stop the service.
 2.  At this point you may want to remove the uploaded files from you Cloud Object Storage or simply delete the bucket or account if there were only created for running this demo.
 
-## Next steps
+## Learn More
 
 To understand more about how the example was configured to work with Cloud Object Storage, review the following files in this project's source code:
 
