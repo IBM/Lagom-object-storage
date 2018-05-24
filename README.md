@@ -5,7 +5,7 @@
 This project demonstrates a simple Lagom service that includes a [Read-Side](https://www.lagomframework.com/documentation/current/java/ReadSide.html) processor that publishes Account Extracts into [IBM Cloud Object Storage](https://www.ibm.com/cloud-computing/bluemix/cloud-object-storage).
 
 
-## How the application works
+## Flow
 
 This example is a simple banking application that allows you to simulate depositing and withdrawing money from one account. The example propagates account transactions from the write-side (`AccountEntity`) to the read-side (`AccountExtractProcessor`) as events stored in a Cassandra database. On every 5 transactions, the service generates an account extract and uploads it to a Cloud Object Storage bucket. Extracts can be downloaded for local visualization.
 
@@ -18,7 +18,7 @@ To build and run this example, you need:
 - [git](https://git-scm.com/)
 - [Java SE 8 JDK](http://www.oracle.com/technetwork/java/javase/overview/index.html)
 - [Maven 3.2.1+](https://maven.apache.org/) to build and run the Lagom project (3.5.0 recommended)
-- [IBM Cloud Object Storage](https://www.ibm.com/cloud-computing/bluemix/cloud-object-storage) setup in [IBM Bluemix](https://www.ibm.com/cloud-computing/bluemix/)
+- [Create IBM Cloud Object Storage](https://console.bluemix.net/catalog/services/cloud-object-storage)
 
 
 ## Steps
