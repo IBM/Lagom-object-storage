@@ -27,7 +27,6 @@ To build and run this example, you need:
 2.  [Start the Lagom sample application](#start-the-lagom-sample-application)
 3.  [Generate some traffic on the Lagom service](#generate-some-traffic-on-the-lagom-service)
 4.  [Stop Lagom and clean IBM Cloud Object Storage](#stop-lagom-and-clean-ibm-cloud-object-storage)
-5.  [Next steps](#next-steps)
 
 
 ### Download and set up the Lagom service
@@ -36,11 +35,11 @@ Follow these steps to get a local copy of this project and configure it with the
 
 1.  Open a command line shell and clone the example repository:
     ```
-    git clone https://github.com/lagom/ibm-integration-examples.git
+    git clone https://github.com/IBM/Lagom-object-storage.git
     ```
 2.  Change into the example's root directory:
     ```
-    cd ibm-integration-examples/lagom-cloud-object-storage-example
+    cd Lagom-object-storage
     ```
 3.  Supply the configuration:
     1. Copy the `account-impl/src/main/resources/cloud-object-storage.conf.template` file to `account-impl/src/main/resources/cloud-object-storage.conf`.
