@@ -100,7 +100,7 @@ At this point, Extract `123-4567-890#1` has been archived to Cloud Object Storag
 ```
 curl http://localhost:9000/api/account/123-4567-890/extract/1
 ```
-You can also navigate to the  Cloud Object Storage bucket in Bluemix and verify the presence of the file.
+You can also navigate to the Cloud Object Storage bucket in IBM Cloud and verify the presence of the file.
 
 ### Stop Lagom and clean IBM Cloud Object Storage
 
