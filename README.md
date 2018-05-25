@@ -11,6 +11,11 @@ This example is a simple banking application that allows you to simulate deposit
 
 Note: the`AccountExtractRepository`, that holds extracts in-memory, is not thread-safe and therefore its code is only suitable for demonstrations.
 
+## Included components
+
+[IBM Cloud Object Storage](https://www.ibm.com/cloud-computing/bluemix/cloud-object-storage)
+[Lagom](https://www.lagomframework.com/)
+
 ## Prerequisites
 
 To build and run this example, you need:
