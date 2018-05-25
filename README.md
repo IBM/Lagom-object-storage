@@ -15,11 +15,12 @@ Note: the`AccountExtractRepository`, that holds extracts in-memory, is not threa
 
 To build and run this example, you need:
 
+- [IBM cloud paid account](https://www.ibm.com/cloud/)
 - [git](https://git-scm.com/)
 - [Java SE 8 JDK](http://www.oracle.com/technetwork/java/javase/overview/index.html)
 - [Maven 3.2.1+](https://maven.apache.org/) to build and run the Lagom project (3.5.0 recommended)
-- [Create IBM Cloud Object Storage](https://console.bluemix.net/catalog/services/cloud-object-storage)
-
+- [Create IBM Cloud Object Storage](https://console.bluemix.net/catalog/services/cloud-object-storage)    
+  **Note: The object storage should be configured first. It takes a while for the storage to be provisioned.**
 
 ## Steps
 
@@ -43,7 +44,9 @@ Follow these steps to get a local copy of this project and configure it with the
     ```
 3.  Supply the configuration:
     1. Copy the `account-impl/src/main/resources/cloud-object-storage.conf.template` file to `account-impl/src/main/resources/cloud-object-storage.conf`.
-    2. Open `account-impl/src/main/resources/cloud-object-storage.conf` in a text editor and fill in the necessary information. Details are provided in the file itself.
+    2. Open `account-impl/src/main/resources/cloud-object-storage.conf` in a text editor and fill in the necessary information. Details are provided in the file itself.   
+    The credentials to the object storage can be found on the [IBM cloud console](https://control.bluemix.net/storage/objectstorage). The credentail information is also on the dashboard. It looks something like this:
+    ![dash](dash.png)
 
 ### Start the Lagom sample application
 
