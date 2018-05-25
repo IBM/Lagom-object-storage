@@ -89,7 +89,7 @@ curl -H "Content-Type: application/json" -XPOST http://localhost:9000/api/accoun
 ```
 curl http://localhost:9000/api/account/123-4567-890/extract/1
 ```
-Extract are retrived by number (#1 in above example). The extract has a status: `ARCHIVED` meaning it is uploaded to Cloud Object Storage and is being retrieved from there or `CURRENT`indicating that this is currently being built in-memory and it's not yet uploaded.
+Extract are retrieved by number (#1 in above example). The extract has a status: `ARCHIVED` meaning it is uploaded to Cloud Object Storage and is being retrieved from there or `CURRENT` indicating that this is currently being built in-memory and it's not yet uploaded.
 
 4. After the 5th operations you should see a INFO logging similar to:
 ```
