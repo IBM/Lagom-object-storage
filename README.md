@@ -50,8 +50,7 @@ Follow these steps to get a local copy of this project and configure it with the
 3.  Supply the configuration:
     1. Copy the `account-impl/src/main/resources/cloud-object-storage.conf.template` file to `account-impl/src/main/resources/cloud-object-storage.conf`.
     2. Open `account-impl/src/main/resources/cloud-object-storage.conf` in a text editor and fill in the necessary information. Details are provided in the file itself.   
-    The credentials to the object storage can be found on the [IBM cloud console](https://control.bluemix.net/storage/objectstorage). The credentail information is also on the dashboard. It looks something like this:
-    ![dash](dash.png)
+    The credentials to the object storage can be found on the [IBM cloud console](https://control.bluemix.net/storage/objectstorage). 
 
 ### Start the Lagom sample application
 
