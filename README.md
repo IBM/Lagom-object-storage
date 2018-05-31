@@ -1,8 +1,8 @@
 # Lagom integration with IBM Cloud Object Storage
 
-[IBM Cloud Object Storage](https://console.bluemix.net/catalog/services/cloud-object-storage) is a web-scale platform that stores unstructured data — from petabyte to exabyte — with reliability, security, availability and disaster recovery without replication.
+[IBM Cloud Object Storage](https://control.bluemix.net/storage/objectstorage) is a web-scale platform that stores unstructured data — from petabyte to exabyte — with reliability, security, availability and disaster recovery without replication.
 
-This project demonstrates a simple Lagom service that includes a [Read-Side](https://www.lagomframework.com/documentation/current/java/ReadSide.html) processor that publishes Account Extracts into [IBM Cloud Object Storage](https://console.bluemix.net/catalog/services/cloud-object-storage).
+This project demonstrates a simple Lagom service that includes a [Read-Side](https://www.lagomframework.com/documentation/current/java/ReadSide.html) processor that publishes Account Extracts into [IBM Cloud Object Storage](https://control.bluemix.net/storage/objectstorage).
 
 
 ## Flow
@@ -13,7 +13,7 @@ Note: the`AccountExtractRepository`, that holds extracts in-memory, is not threa
 
 ## Included components
 
-[IBM Cloud Object Storage](https://console.bluemix.net/catalog/services/cloud-object-storage)    
+[IBM Cloud Object Storage](https://control.bluemix.net/storage/objectstorage)    
 [Lagom](https://www.lagomframework.com/)
 
 ## Prerequisites
