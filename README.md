@@ -50,7 +50,7 @@ Follow these steps to get a local copy of this project and configure it with the
 3.  Supply the configuration:
     1. Copy the `account-impl/src/main/resources/cloud-object-storage.conf.template` file to `account-impl/src/main/resources/cloud-object-storage.conf`.
     2. Open `account-impl/src/main/resources/cloud-object-storage.conf` in a text editor and fill in the necessary information. Details are provided in the file itself.   
-    The credentials to the object storage can be found on the [IBM Cloud console](https://control.bluemix.net/storage/objectstorage). 
+    The credentials to the object storage can be found on the [IBM Cloud console](https://control.bluemix.net/storage/objectstorage).  Check the [video](#video) for more information. 
 
 ### Start the Lagom sample application
 
@@ -115,6 +115,9 @@ To stop running the service:
 
 1.  Press "Enter" in the console running the Lagom development environment to stop the service.
 2.  At this point you may want to remove the uploaded files from you Cloud Object Storage or simply delete the bucket or account if there were only created for running this demo.
+
+## Video
+The [Video](https://youtu.be/enOFlo4JD6M) focuses on setting up the IBM Cloud Object Storage.
 
 ## Learn More
 
