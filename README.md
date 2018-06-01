@@ -120,7 +120,7 @@ To stop running the service:
 2.  At this point you may want to remove the uploaded files from you Cloud Object Storage or simply delete the bucket or account if there were only created for running this demo.
 
 ## Video
-The [Video](https://youtu.be/enOFlo4JD6M) focuses on setting up the IBM Cloud Object Storage.
+[![Demo Video](https://img.youtube.com/vi/enOFlo4JD6M/0.jpg)](https://www.youtube.com/watch?v=enOFlo4JD6M)
 
 ## Learn More
 
