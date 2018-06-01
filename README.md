@@ -6,6 +6,9 @@ This project demonstrates a simple Lagom service that includes a [Read-Side](htt
 
 
 ## Flow
+![architecture diagram](temparchi.png)
+1. User creates 5 transactions locally.
+2. The client interact with IBM Cloud Object Storage via S3 API.
 
 This example is a simple banking application that allows you to simulate depositing and withdrawing money from one account. The example propagates account transactions from the write-side (`AccountEntity`) to the read-side (`AccountExtractProcessor`) as events stored in a Cassandra database. On every 5 transactions, the service generates an account extract and uploads it to a Cloud Object Storage bucket. Extracts can be downloaded for local visualization.
 
