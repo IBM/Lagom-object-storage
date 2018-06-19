@@ -23,12 +23,10 @@ Note: the`AccountExtractRepository`, that holds extracts in-memory, is not threa
 
 To build and run this example, you need:
 
-- [IBM Cloud paid account](https://www.ibm.com/cloud/)
 - [git](https://git-scm.com/)
 - [Java SE 8 JDK](http://www.oracle.com/technetwork/java/javase/overview/index.html)
 - [Maven 3.2.1+](https://maven.apache.org/) to build and run the Lagom project (3.5.0 recommended)
-- [Create IBM Cloud Object Storage](https://console.bluemix.net/catalog/services/cloud-object-storage)    
-  **Note: The object storage should be configured first. It takes a while for the storage to be provisioned.**
+- A service instance of [IBM Cloud Object Storage](https://console.bluemix.net/catalog/services/cloud-object-storage)    
 
 ## Steps
 
@@ -57,7 +55,7 @@ Follow these steps to get a local copy of this project and configure it with the
 
 ### Start the Lagom sample application
 
- In the command line shell where you downloaded the Lagom service, start the Lagom development environment from the `lagom-cloud-object-storage-example` directory:
+In the command line where you downloaded the Lagom service, start the Lagom development environment from the root of the cloned directory, `Lagom-object-storage`:
 
 ```
 mvn lagom:runAll
