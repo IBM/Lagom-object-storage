@@ -16,8 +16,11 @@ Note: the`AccountExtractRepository`, that holds extracts in-memory, is not threa
 
 ## Included components
 
-[IBM Cloud Object Storage](https://control.bluemix.net/storage/objectstorage)    
+[IBM Cloud Object Storage](https://control.bluemix.net/storage/objectstorage)   
 [Lagom](https://www.lagomframework.com/)
+
+# Watch the Video
+[![](http://img.youtube.com/vi/enOFlo4JD6M/0.jpg)](https://www.youtube.com/watch?v=enOFlo4JD6M)
 
 ## Prerequisites
 
