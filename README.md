@@ -16,8 +16,13 @@ Note: the`AccountExtractRepository`, that holds extracts in-memory, is not threa
 
 ## Included components
 
-[IBM Cloud Object Storage](https://control.bluemix.net/storage/objectstorage)   
-[Lagom](https://www.lagomframework.com/)
+[IBM Cloud Object Storage](https://control.bluemix.net/storage/objectstorage): Build and deliver cost effective apps and services with high reliability and fast speed to market in an unstructured cloud data store.
+[Lagom](https://www.lagomframework.com/): An open source framework built with the shifting from monoliths to microservices-driven application architecture in mind.
+
+## Featured technologies
+
+[Cloud](https://www.ibm.com/developerworks/learn/cloud/): Accessing computer and information technology resources through the Internet.
+[Java](https://java.com/): A secure, object-oriented programming language for creating applications.
 
 # Watch the Video
 [![](http://img.youtube.com/vi/enOFlo4JD6M/0.jpg)](https://www.youtube.com/watch?v=enOFlo4JD6M)
@@ -119,9 +124,6 @@ To stop running the service:
 
 1.  Press "Enter" in the console running the Lagom development environment to stop the service.
 2.  At this point you may want to remove the uploaded files from you Cloud Object Storage or simply delete the bucket or account if there were only created for running this demo.
-
-## Video
-[![Demo Video](https://img.youtube.com/vi/enOFlo4JD6M/0.jpg)](https://www.youtube.com/watch?v=enOFlo4JD6M)
 
 ## Learn More
 
