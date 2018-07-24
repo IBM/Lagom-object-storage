@@ -16,13 +16,13 @@ Note: the`AccountExtractRepository`, that holds extracts in-memory, is not threa
 
 ## Included components
 
-[IBM Cloud Object Storage](https://control.bluemix.net/storage/objectstorage): Build and deliver cost effective apps and services with high reliability and fast speed to market in an unstructured cloud data store.
-[Lagom](https://www.lagomframework.com/): An open source framework built with the shifting from monoliths to microservices-driven application architecture in mind.
+* [IBM Cloud Object Storage](https://control.bluemix.net/storage/objectstorage): Build and deliver cost effective apps and services with high reliability and fast speed to market in an unstructured cloud data store.
+* [Lagom](https://www.lagomframework.com/): An open source framework built with the shifting from monoliths to microservices-driven application architecture in mind.
 
 ## Featured technologies
 
-[Cloud](https://www.ibm.com/developerworks/learn/cloud/): Accessing computer and information technology resources through the Internet.
-[Java](https://java.com/): A secure, object-oriented programming language for creating applications.
+* [Cloud](https://www.ibm.com/developerworks/learn/cloud/): Accessing computer and information technology resources through the Internet.
+* [Java](https://java.com/): A secure, object-oriented programming language for creating applications.
 
 # Watch the Video
 [![](http://img.youtube.com/vi/enOFlo4JD6M/0.jpg)](https://www.youtube.com/watch?v=enOFlo4JD6M)
@@ -36,15 +36,15 @@ To build and run this example, you need:
 - [Maven 3.2.1+](https://maven.apache.org/) to build and run the Lagom project (3.5.0 recommended)
 - A service instance of [IBM Cloud Object Storage](https://console.bluemix.net/catalog/services/cloud-object-storage)    
 
-## Steps
+# Steps
 
-1.  [Download and set up the Lagom service](#download-and-set-up-the-lagom-service)
-2.  [Start the Lagom sample application](#start-the-lagom-sample-application)
-3.  [Generate some traffic on the Lagom service](#generate-some-traffic-on-the-lagom-service)
-4.  [Stop Lagom and clean IBM Cloud Object Storage](#stop-lagom-and-clean-ibm-cloud-object-storage)
+1.  [Download and set up the Lagom service](#1-download-and-set-up-the-lagom-service)
+2.  [Start the Lagom sample application](#2-start-the-lagom-sample-application)
+3.  [Generate some traffic on the Lagom service](#3-generate-some-traffic-on-the-lagom-service)
+4.  [Stop Lagom and clean IBM Cloud Object Storage](#4-stop-lagom-and-clean-ibm-cloud-object-storage)
 
 
-### Download and set up the Lagom service
+### 1. Download and set up the Lagom service
 
 Follow these steps to get a local copy of this project and configure it with the Cloud Object Storage credentials and settings.
 
@@ -61,7 +61,7 @@ Follow these steps to get a local copy of this project and configure it with the
     2. Open `account-impl/src/main/resources/cloud-object-storage.conf` in a text editor and fill in the necessary information. Details are provided in the file itself.   
     The credentials to the object storage can be found on the [IBM Cloud console](https://control.bluemix.net/storage/objectstorage).  Check the [video](#video) for more information. 
 
-### Start the Lagom sample application
+### 2. Start the Lagom sample application
 
 In the command line where you downloaded the Lagom service, start the Lagom development environment from the root of the cloned directory, `Lagom-object-storage`:
 
@@ -81,7 +81,7 @@ You should see some console output, including these lines:
 These messages indicate that the service has started correctly.
 
 
-### Generate some traffic on the Lagom service
+### 3. Generate some traffic on the Lagom service
 
 To keep things simple, the example does not have a GUI but exposes a REST API. You can use any REST client or http tool to interact with the application. The rest of this guide will use curl syntax to document the calls. You can adapt it to your REST client of choice.
 
@@ -105,9 +105,9 @@ curl -H "Content-Type: application/json" -XPOST http://localhost:9000/api/accoun
 ```
 curl http://localhost:9000/api/account/123-4567-890/extract/1
 ```
-Extract are retrieved by number (#1 in above example). The extract has a status: `ARCHIVED` meaning it is uploaded to Cloud Object Storage and is being retrieved from there or `CURRENT` indicating that this is currently being built in-memory and it's not yet uploaded.
+Extracts are retrieved by number (#1 in above example). The extract has a status: `ARCHIVED` meaning it is uploaded to Cloud Object Storage and is being retrieved from there or `CURRENT` indicating that this is currently being built in-memory and it's not yet uploaded.
 
-4. After the 5th operations you should see a INFO logging similar to:
+4. After the 5th operation you should see a INFO logging similar to:
 ```
 14:04:39.293 [info] com.lightbend.lagom.account.impl.readside.AccountExtractRepositoryImpl [] - Extract 123-4567-890#1 has 5 transactions.
 14:04:39.293 [info] com.lightbend.lagom.account.impl.readside.AccountExtractRepositoryImpl [] - Archiving extract: 123-4567-890#1
@@ -118,7 +118,7 @@ curl http://localhost:9000/api/account/123-4567-890/extract/1
 ```
 You can also navigate to the Cloud Object Storage bucket in IBM Cloud and verify the presence of the file.
 
-### Stop Lagom and clean IBM Cloud Object Storage
+### 4. Stop Lagom and clean IBM Cloud Object Storage
 
 To stop running the service:
 
@@ -135,3 +135,11 @@ To understand more about how the example was configured to work with Cloud Objec
 - [`AccountExtractProcessor.java`](account-impl/src/main/java/com/lightbend/lagom/account/impl/readside/AccountExtractProcessor.java) — the read-side processor that consumes events from `AccountEntity` and forward to `AccountExtractRepository`.
 - [`AccountExtractRepositoryImpl.java`](account-impl/src/main/java/com/lightbend/lagom/account/impl/readside/AccountExtractRepositoryImpl.java) - the repository that accumulates `Account Extracts` in before archiving in Cloud Object Storage.
 - [`Storage.java`](account-impl/src/main/java/com/lightbend/lagom/account/impl/readside/Storage.java) - the `Storage` component is a facade to Alpakka S3 connector that is used to communicate with the Cloud Object Storage endpoint.
+
+# Links
+* [Lagom: First Impressions and Initial Comparison to Spring Cloud](https://ordina-jworks.github.io/microservices/2016/04/22/Lagom-First-Impressions-and-Initial-Comparison-to-Spring-Cloud.html): A blogpost going further in depth about Lagom.
+* [Guide to Reactive Microservices Using Lagom Framework](http://www.baeldung.com/lagom-reactive-microservices): Implementation of an example application using a reactive microservices driven architecture.
+* [Meet Lagom, the latest monolith killer](https://jeroenbellen.com/meet-lagom-the-latest-monolith-killer/): A brief blogpost introduction to Lagom.
+
+# Licnese
+[Apache 2.0](LICENSE)
