@@ -6,7 +6,7 @@ This project demonstrates a simple Lagom service that includes a [Read-Side](htt
 
 
 ## Flow
-![architecture diagram](temparchi.png)
+![architecture diagram](architecture.png)
 1. User creates 5 transactions locally.
 2. The client interact with IBM Cloud Object Storage via S3 API.
 
