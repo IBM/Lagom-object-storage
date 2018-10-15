@@ -141,5 +141,5 @@ To understand more about how the example was configured to work with Cloud Objec
 * [Guide to Reactive Microservices Using Lagom Framework](http://www.baeldung.com/lagom-reactive-microservices): Implementation of an example application using a reactive microservices driven architecture.
 * [Meet Lagom, the latest monolith killer](https://jeroenbellen.com/meet-lagom-the-latest-monolith-killer/): A brief blogpost introduction to Lagom.
 
-# Licnese
+# License
 [Apache 2.0](LICENSE)
