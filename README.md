@@ -21,20 +21,20 @@ Note: the`AccountExtractRepository`, that holds extracts in-memory, is not threa
 
 ## Featured technologies
 
-* [Cloud](https://www.ibm.com/developerworks/learn/cloud/): Accessing computer and information technology resources through the Internet.
+* [Cloud](https://developer.ibm.com/depmodels/cloud/): Accessing computer and information technology resources through the Internet.
 * [Java](https://java.com/): A secure, object-oriented programming language for creating applications.
 
 # Watch the Video
-[![](http://img.youtube.com/vi/enOFlo4JD6M/0.jpg)](https://www.youtube.com/watch?v=enOFlo4JD6M)
+[![](https://img.youtube.com/vi/enOFlo4JD6M/0.jpg)](https://www.youtube.com/watch?v=enOFlo4JD6M)
 
 ## Prerequisites
 
 To build and run this example, you need:
 
 - [git](https://git-scm.com/)
-- [Java SE 8 JDK](http://www.oracle.com/technetwork/java/javase/overview/index.html)
+- [Java SE 8 JDK](https://www.oracle.com/technetwork/java/javase/overview/index.html)
 - [Maven 3.2.1+](https://maven.apache.org/) to build and run the Lagom project (3.5.0 recommended)
-- A service instance of [IBM Cloud Object Storage](https://console.bluemix.net/catalog/services/cloud-object-storage)    
+- A service instance of [IBM Cloud Object Storage](https://cloud.ibm.com/catalog/services/cloud-object-storage)
 
 # Steps
 
@@ -50,7 +50,7 @@ Follow these steps to get a local copy of this project and configure it with the
 
 1.  Open a command line shell and clone the example repository:
     ```
-    git clone https://github.com/IBM/Lagom-object-storage.git
+    git clone https://github.com/IBM/Lagom-object-storage
     ```
 2.  Change into the example's root directory:
     ```
@@ -58,8 +58,8 @@ Follow these steps to get a local copy of this project and configure it with the
     ```
 3.  Supply the configuration:
     1. Copy the `account-impl/src/main/resources/cloud-object-storage.conf.template` file to `account-impl/src/main/resources/cloud-object-storage.conf`.
-    2. Open `account-impl/src/main/resources/cloud-object-storage.conf` in a text editor and fill in the necessary information. Details are provided in the file itself.   
-    The credentials to the object storage can be found on the [IBM Cloud console](https://control.bluemix.net/storage/objectstorage).  Check the [video](#video) for more information. 
+    2. Open `account-impl/src/main/resources/cloud-object-storage.conf` in a text editor and fill in the necessary information. Details are provided in the file itself.
+    The credentials to the object storage can be found on the [IBM Cloud console](https://control.bluemix.net/storage/objectstorage).  Check the [video](#video) for more information.
 
 ### 2. Start the Lagom sample application
 
@@ -138,7 +138,7 @@ To understand more about how the example was configured to work with Cloud Objec
 
 # Links
 * [Lagom: First Impressions and Initial Comparison to Spring Cloud](https://ordina-jworks.github.io/microservices/2016/04/22/Lagom-First-Impressions-and-Initial-Comparison-to-Spring-Cloud.html): A blogpost going further in depth about Lagom.
-* [Guide to Reactive Microservices Using Lagom Framework](http://www.baeldung.com/lagom-reactive-microservices): Implementation of an example application using a reactive microservices driven architecture.
+* [Guide to Reactive Microservices Using Lagom Framework](https://www.baeldung.com/lagom-reactive-microservices): Implementation of an example application using a reactive microservices driven architecture.
 * [Meet Lagom, the latest monolith killer](https://jeroenbellen.com/meet-lagom-the-latest-monolith-killer/): A brief blogpost introduction to Lagom.
 
 # License
